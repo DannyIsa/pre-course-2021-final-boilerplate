@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 //--------------------------------------------------SELECTORS--------------------------------------------------------
 const textInput = document.querySelector('#text-input');
 const priority = document.querySelector('#priority-selector');
@@ -11,6 +10,7 @@ const clearButton = document.querySelector('#clear-button');
 let addSectionWindow = document.querySelector('#add-section');
 let openAddSectionWindowButton = document.querySelector('#open-add-section');
 addSectionWindow.hidden = true;
+addSectionWindow.hidden = true; //for the add-window pop up
 
 //COMMAND TO START WINDOW
 let taskCounter = JSON.parse(localStorage.getItem("numberOfTasksGiven")) || 1;
@@ -209,4 +209,3 @@ function opensAddSectionWindow() {
         addSectionWindow.classList.toggle('fade-in');
         document.getElementById("text-input").focus();
 }
->>>>>>> Stashed changes
